@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="23078c3c-eb87-48d1-9246-8c846f351c48" name="Default Changelist" comment="demo 2: toString, pseudo" />
+    <list default="true" id="23078c3c-eb87-48d1-9246-8c846f351c48" name="Default Changelist" comment="demo 2: toString, pseudo">
+      <change afterPath="$PROJECT_DIR$/count.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,7 +68,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604946268586</updated>
-      <workItem from="1604946269632" duration="2241000" />
+      <workItem from="1604946269632" duration="2957000" />
+      <workItem from="1605113596819" duration="2055000" />
     </task>
     <task id="LOCAL-00001" summary="init n demo 1">
       <created>1604946299811</created>
@@ -68,6 +91,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init n demo 1" />
     <MESSAGE value="demo 2: toString, pseudo" />
@@ -86,22 +120,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="323" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1604946487558" />
-    <state width="1807" height="252" key="GridCell.Tab.0.bottom" timestamp="1604947648994">
+    <state width="1807" height="266" key="GridCell.Tab.0.bottom" timestamp="1605115165218">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="252" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1604947648994" />
-    <state width="1807" height="252" key="GridCell.Tab.0.center" timestamp="1604947648994">
+    <state width="1807" height="266" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1605115165218" />
+    <state width="1807" height="266" key="GridCell.Tab.0.center" timestamp="1605115165217">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="252" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1604947648994" />
-    <state width="1807" height="252" key="GridCell.Tab.0.left" timestamp="1604947648994">
+    <state width="1807" height="266" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1605115165217" />
+    <state width="1807" height="266" key="GridCell.Tab.0.left" timestamp="1605115165217">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="252" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1604947648994" />
-    <state width="1807" height="252" key="GridCell.Tab.0.right" timestamp="1604947648994">
+    <state width="1807" height="266" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1605115165217" />
+    <state width="1807" height="266" key="GridCell.Tab.0.right" timestamp="1605115165218">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="252" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1604947648994" />
+    <state width="1807" height="266" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1605115165218" />
     <state x="482" y="187" key="SettingsEditor" timestamp="1604946325858">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
