@@ -61,7 +61,8 @@ $mc1->subtract = function (...$args) {
 /*$sub = $mc1->subtract;
 var_dump($sub);
 $sub($mc2); */
-echo Counter::getCount()."\n";
+
+/* echo Counter::getCount()."\n";
 $counters = [];
 for ($i = 0; $i < 10; $i++) {
     $counters[] = new Counter();
@@ -70,4 +71,46 @@ echo Counter::getCount()."\n";
 $counters[2] = null;
 echo Counter::getCount()."\n";
 var_dump($counters);
-echo 'The End!';
+echo 'The End!'; */
+
+/* $c = new Counter();
+$c->undef = 'data';
+$c->sum = ['amount'=>100, 'currency'=>'grn'];
+$c->foo = function () {
+    extract(array('this' => function ()
+    {
+        foreach(debug_backtrace(true) as $stack){
+            if(isset($stack['object'])){
+                return $stack['object'];
+            }
+        }
+    }));
+    echo "Hello Function from $this";
+};
+// var_dump($c->undef);
+// var_dump($c);
+// $c->foo();
+var_dump($c->sum);
+$c1 = clone $c;
+var_dump($c1->sum);
+$c1->sum['amount']++;
+var_dump($c->sum);
+var_dump($c1->sum); */
+
+class A {
+    function foo() {
+        return 'SMTH';
+    }
+}
+
+class B extends A {
+    function foo() {
+        return parent::foo() . ' Else...';
+    }
+}
+// echo (new B())->foo();
+function outerFoo (A $a) : void {
+    echo $a->foo();
+}
+
+outerFoo(new B());
