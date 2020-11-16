@@ -1,5 +1,13 @@
 <?php
+
+/* use StepIt\Cat;
+
 require_once 'count.php';
+require_once 'step_it.php'; */
+use StepIt\Page;
+require_once 'Seo.php';
+require_once 'Page.php';
+
 class MathComplex {
 
     public $re, $im;
@@ -30,7 +38,7 @@ class MathComplex {
     }
 }
 
-$mc1 = new MathComplex;
+/* $mc1 = new MathComplex;
 // $mc1->re = 2;
 // $mc1->im = 3;
 $mc1->add(2, 0);
@@ -56,7 +64,7 @@ $mc1->subtract = function (...$args) {
         $this->re -= $args[0];
         $this->im -= $args[1];
     }
-};
+}; */
 
 /*$sub = $mc1->subtract;
 var_dump($sub);
@@ -97,7 +105,7 @@ $c1->sum['amount']++;
 var_dump($c->sum);
 var_dump($c1->sum); */
 
-class A {
+/* class A {
     function foo() {
         return 'SMTH';
     }
@@ -113,4 +121,15 @@ function outerFoo (A $a) : void {
     echo $a->foo();
 }
 
-outerFoo(new B());
+outerFoo(new B()); */
+
+/* $cat1 = new Cat();
+$cat1->name = 'Red';
+var_dump($cat1);
+var_dump(MY_CONST);
+var_dump($localVar);
+var_dump($localObjectVar); */
+
+$p1 = new Page('Demo content.');
+$p1->printKeywords();
+var_dump($p1);
