@@ -4,9 +4,38 @@
 
 require_once 'count.php';
 require_once 'step_it.php'; */
-use StepIt\Page;
+
+/* use StepIt\Page;
 require_once 'Seo.php';
-require_once 'Page.php';
+require_once 'Page.php'; */
+
+/* function __autoload($classname) {
+    echo $classname . "\n";
+    require_once (__DIR__ . "/$classname.php");
+} */
+
+use \StepIt\Page;
+
+spl_autoload_register(
+    function ($classname) {
+        if (!strstr($classname, '\\')) {
+            echo $classname . '(1)' . "\n";
+            require_once (__DIR__ . "/$classname.php");
+        }
+    }
+);
+
+spl_autoload_register(
+    function ($classname) {
+        if (strstr($classname, '\\')) {
+            // echo $classname . "\n";
+            $classnameArray = preg_split("/[\\\]+/", $classname);
+            $classname = $classnameArray[count($classnameArray) - 1];
+            echo $classname . '(2)' . "\n";
+            require_once (__DIR__ . "/$classname.php");
+        }
+    }
+);
 
 class MathComplex {
 
@@ -131,5 +160,5 @@ var_dump($localVar);
 var_dump($localObjectVar); */
 
 $p1 = new Page('Demo content.');
-$p1->printKeywords();
-var_dump($p1);
+// $p1->printKeywords();
+//var_dump($p1);

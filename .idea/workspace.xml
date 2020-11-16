@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23078c3c-eb87-48d1-9246-8c846f351c48" name="Default Changelist" comment="demo 3: clone, extends, polymorphism">
-      <change afterPath="$PROJECT_DIR$/Page.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/step_it.php" afterDir="false" />
+    <list default="true" id="23078c3c-eb87-48d1-9246-8c846f351c48" name="Default Changelist" comment="namespaces">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
@@ -72,7 +69,7 @@
       <updated>1604946268586</updated>
       <workItem from="1604946269632" duration="2957000" />
       <workItem from="1605113596819" duration="7519000" />
-      <workItem from="1605544966889" duration="2514000" />
+      <workItem from="1605544966889" duration="5925000" />
     </task>
     <task id="LOCAL-00001" summary="init n demo 1">
       <created>1604946299811</created>
@@ -102,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605120890827</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="namespaces">
+      <created>1605547635881</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605547635881</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,7 +129,8 @@
     <MESSAGE value="demo 2: toString, pseudo" />
     <MESSAGE value="demo 2: destruct" />
     <MESSAGE value="demo 3: clone, extends, polymorphism" />
-    <option name="LAST_COMMIT_MESSAGE" value="demo 3: clone, extends, polymorphism" />
+    <MESSAGE value="namespaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="namespaces" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="210" width="1084" height="710" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604946491035">
@@ -140,22 +145,22 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="776" y="323" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1604946487558" />
-    <state width="1807" height="372" key="GridCell.Tab.0.bottom" timestamp="1605547567566">
+    <state width="1807" height="357" key="GridCell.Tab.0.bottom" timestamp="1605551376465">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="372" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1605547567566" />
-    <state width="1807" height="372" key="GridCell.Tab.0.center" timestamp="1605547567565">
+    <state width="1807" height="357" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1605551376465" />
+    <state width="1807" height="357" key="GridCell.Tab.0.center" timestamp="1605551376463">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="372" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1605547567565" />
-    <state width="1807" height="372" key="GridCell.Tab.0.left" timestamp="1605547567564">
+    <state width="1807" height="357" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1605551376463" />
+    <state width="1807" height="357" key="GridCell.Tab.0.left" timestamp="1605551376462">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="372" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1605547567564" />
-    <state width="1807" height="372" key="GridCell.Tab.0.right" timestamp="1605547567566">
+    <state width="1807" height="357" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1605551376462" />
+    <state width="1807" height="357" key="GridCell.Tab.0.right" timestamp="1605551376464">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1807" height="372" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1605547567566" />
+    <state width="1807" height="357" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1605551376464" />
     <state x="789" y="478" width="399" height="149" key="NewPhpFileDialog" timestamp="1605547239096">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
