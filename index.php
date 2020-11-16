@@ -159,6 +159,18 @@ var_dump(MY_CONST);
 var_dump($localVar);
 var_dump($localObjectVar); */
 
+function errorHandler($errNo, $msg, $file, $line){
+    echo "Error #$errNo: $msg, file $file, line $line";
+}
+
+set_error_handler("errorHandler", E_ALL);
+
 $p1 = new Page('Demo content.');
 // $p1->printKeywords();
 //var_dump($p1);
+// $p1 = $p1 ?:-) 'abc'; // PHP Parse error:  syntax error, unexpected ')'
+// $p1 = $p1 ?:- 'abc'; // It's Right
+echo $p1; // PHP Recoverable fatal error:  Object of class StepIt\Page could not be converted to string
+// $abc1 = new ABC(); // PHP Fatal error:  require_once(): Failed opening required '/home/yurii/PhpstormProjects/oop/ABC.php' (include_path='.:/usr/share/php')
+
+echo "Normal End";
