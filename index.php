@@ -2,7 +2,7 @@
 
 /* use StepIt\Cat;
 
-require_once 'count.php';
+require_once 'Counter.php';
 require_once 'step_it.php'; */
 
 /* use StepIt\Page;
@@ -110,10 +110,16 @@ echo Counter::getCount()."\n";
 var_dump($counters);
 echo 'The End!'; */
 
-/* $c = new Counter();
+class CounterProxy extends Counter {
+    public function __toString () {
+        return "undef = $this->undef, sum = $this->sum";
+    }
+}
+
+$c = new CounterProxy();
 $c->undef = 'data';
 $c->sum = ['amount'=>100, 'currency'=>'grn'];
-$c->foo = function () {
+/* $c->foo = function () {
     extract(array('this' => function ()
     {
         foreach(debug_backtrace(true) as $stack){
@@ -123,11 +129,26 @@ $c->foo = function () {
         }
     }));
     echo "Hello Function from $this";
-};
-// var_dump($c->undef);
-// var_dump($c);
-// $c->foo();
-var_dump($c->sum);
+}; */
+
+/* $c->__toString = (function () {
+    return "undef = $this->undef, sum = $this->sum";
+})->bindTo($c); */
+
+$c->foo = (function () {
+    echo "Hello Function from $this";
+})->bindTo($c);
+
+if ($c instanceof Counter) {
+    var_dump($c->undef);
+    var_dump($c);
+    $c->foo();
+} else {
+    echo 'Alarm!';
+}
+
+
+/* var_dump($c->sum);
 $c1 = clone $c;
 var_dump($c1->sum);
 $c1->sum['amount']++;
@@ -159,18 +180,49 @@ var_dump(MY_CONST);
 var_dump($localVar);
 var_dump($localObjectVar); */
 
-function errorHandler($errNo, $msg, $file, $line){
-    echo "Error #$errNo: $msg, file $file, line $line";
-}
+/* function errorHandler($errNo, $msg, $file, $line){
+    // echo "Error #$errNo: $msg, file $file, line $line";
+    throw new Exception("Code #$errNo: $msg, file $file, line $line");
+} */
 
-set_error_handler("errorHandler", E_ALL);
+// set_error_handler("errorHandler", E_ALL);
 
-$p1 = new Page('Demo content.');
+// $p1 = new Page('Demo content.');
 // $p1->printKeywords();
 //var_dump($p1);
-// $p1 = $p1 ?:-) 'abc'; // PHP Parse error:  syntax error, unexpected ')'
-// $p1 = $p1 ?:- 'abc'; // It's Right
-echo $p1; // PHP Recoverable fatal error:  Object of class StepIt\Page could not be converted to string
-// $abc1 = new ABC(); // PHP Fatal error:  require_once(): Failed opening required '/home/yurii/PhpstormProjects/oop/ABC.php' (include_path='.:/usr/share/php')
+/* try {
+    // $p1 = $p1 ?:-) 'abc'; // PHP Parse error:  syntax error, unexpected ')'
+    // eval('echo 2 * 2;');
+    eval('$p1 = $p1 ?:-) "abc";');
+    echo "\n";
+// } catch (Exception $ex) {
+} catch (Error $error) {
+    echo "Error: {$error->getMessage()}";
+} */
 
-echo "Normal End";
+// $p1 = $p1 ?:- 'abc'; // It's Right
+/* try {
+    echo $p1; // PHP Recoverable fatal error:  Object of class StepIt\Page could not be converted to string
+} catch (Exception $ex) {
+    echo "Exception: {$ex->getMessage()}";
+} */
+
+/* try {
+    $abc1 = new ABC(); // PHP Fatal error:  require_once(): Failed opening required '/home/yurii/PhpstormProjects/oop/ABC.php' (include_path='.:/usr/share/php')
+} catch (Exception $ex) {
+    echo "Exception: {$ex->getMessage()}";
+} */
+
+/* try {
+    $result = Math::mySqrt(-1);
+    echo "Result: $result\n";
+} catch (Exception $ex) {
+    // echo "Exception: $ex\n";
+    echo "Exception #{$ex->getCode()}: {$ex->getMessage()}, file {$ex->getFile()}, line {$ex->getLine()}";
+} finally {
+    echo "Pre End\n";
+    // exit(-1);
+    die(-1);
+} */
+
+// echo "Normal End";

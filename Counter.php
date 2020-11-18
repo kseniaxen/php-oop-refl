@@ -1,5 +1,5 @@
 <?php
-class Counter {
+/* final */ class Counter {
     private static $count = 0;
     private $unfamiliarFunctions = [];
     public function __construct()
