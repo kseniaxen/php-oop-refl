@@ -226,3 +226,24 @@ var_dump($localObjectVar); */
 } */
 
 // echo "Normal End";
+use StepIt;
+
+$class_info_Counter = new ReflectionClass('Counter');
+echo '<pre>';
+Reflection::export($class_info_Counter);
+echo '</pre>';
+
+$class_info_Math = new ReflectionClass('Math');
+echo '<pre>';
+Reflection::export($class_info_Math);
+echo '</pre>';
+
+$class_info_Page = new ReflectionClass('StepIt\Page');
+echo '<pre>';
+Reflection::export($class_info_Page);
+echo '</pre>';
+
+$class_info_Seo = new ReflectionClass('StepIt\Seo');
+echo '<pre>';
+Reflection::export($class_info_Seo);
+echo '</pre>';
